@@ -7,14 +7,12 @@ import News from "./components/Content/news";
 import Work from "./components/Content/work";
 import Capabilities from "./components/Content/capabilities";
 import Footer from "./components/Footer";
-// import MobileNavigation from "./components/mobileNavigation";
 
 class App extends Component {
     render() {
         return (
             <div className="container">
                 <Header />
-                {/*<MobileNavigation />*/}
                 <Intro />
                 <About />
                 <News />

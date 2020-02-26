@@ -1,35 +1,12 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import styles from './style.module.scss';
-
-
-const links = [
-    {
-        href: '/',
-        text: 'agency.'
-    },
-    {
-        href: '/people',
-        text: 'people.'
-    },
-    {
-        href: '/projects',
-        text: 'projects.'
-    },
-    {
-        href: '/thoughts',
-        text: 'thoughts.'
-    },
-    {
-        href: '#footer',
-        text: 'contact.'
-    }
-];
+import links from '../../links.json';
 
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {headerCallapse: true, position: 0}
+        this.state = {headerCallapse: false, position: 0, isMobileNavOpen: false}
 
     }
 
@@ -42,47 +19,96 @@ class Header extends Component {
     }
 
     checkScroll = () => {
-            if(this.state.position < window.pageYOffset) {
-                this.setState({
-                    headerCallapse: true,
-                    position: window.pageYOffset
-                });
-            } else {
-                this.setState({
-                    headerCallapse: false,
-                    position: window.pageYOffset
-                });
-            }
-        };
+        console.log(window.pageYOffset, this.state.position);
+        if (this.state.position <= window.pageYOffset) {
+            this.setState({
+                headerCallapse: true,
+                position: window.pageYOffset
+            });
+        } else {
+            this.setState({
+                headerCallapse: false,
+                position: window.pageYOffset
+            });
+        }
+    };
+
+    mobileOpenHandler = () => {
+        this.setState({
+            isMobileNavOpen: !this.state.isMobileNavOpen
+        })
+    };
+
+
 
     render() {
         return (
-            <div
-                className={`${styles.desktop_navigation} ${styles.w_hidden_medium}
-                 ${styles.w_hidden_small} ${styles.w_hidden_tiny}  ${this.state.headerCallapse ? styles.out : ""}`}>
-                {/*style={{ color: "white", transform: 'translate3d(0px, 0px, 9999px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d'}}>*/}
-                <div data-collapse="none" data-animation="over-left" data-duration="750" data-easing="ease-in-out"
-                     data-easing2="ease-in-out" className={`${styles.fixed_desktop_navbar} ${styles.w_nav}`}>
-                    <div className={`${styles.nav_1150_wrapper} ${styles.w_container}`}>
-                        <a href="/" className={`${styles.nav_logo_wrapper} ${styles.w_nav_brand} ${styles.w__current}`}>
-                            <div className={`${styles.logo}`}>rightcolours.</div>
-                        </a>
-                        <nav role="navigation" key={links}
-                             className={`${styles.nav_menu_wrapper} ${styles.w_hidden_medium} ${styles.w_hidden_small} ${styles.w_hidden_tiny} ${styles.w_nav_menu}`}>
-                            {links.map(element =>
-                                <Link to=''
-                                    url={element.href}
-                                    className={`${styles.desktop_navlink} ${styles.w_nav_link}`}
-                                    activeClassName={styles.w__current}
-                                    style={{maxWidth: '1150px'}}>
-                                    {element.text}
-                                </Link>)
-                            }
-                        </nav>
+            <React.Fragment>
+                <div
+                    className={`${styles.header_nav} ${this.state.headerCallapse ? styles.out : ""}`}>
+                    <div className={`${styles.header_nav_bar}`}>
+                        <div className={`${styles.header_nav_wrapper}`}>
+                            <a href="/" className={`${styles.header_logo} ${styles.logo_brand} ${styles.w__current}`}>
+                                <div className={`${styles.logo}`}>rightcolours.</div>
+                            </a>
+                            <nav role="navigation" key={links}
+                                 className={`${styles.nav_menu_wrapper} ${styles.w_hidden_medium} ${styles.w_hidden_small} ${styles.w_hidden_tiny} ${styles.w_nav_menu}`}>
+                                {links.map(element =>
+                                    <Link to=''
+                                          url={element.href}
+                                          className={`${styles.desktop_navlink} ${styles.w_nav_link}`}
+                                          activeClassName={styles.w__current}
+                                          style={{maxWidth: '1150px'}}>
+                                        {element.text}
+                                    </Link>)
+                                }
+                            </nav>
+                        </div>
+                        {/*<div className="w-nav-overlay" data-wf-ignore=""/>*/}
                     </div>
-                    <div className="w-nav-overlay" data-wf-ignore=""/>
                 </div>
-            </div>
+
+
+
+                <div className={`${styles.mobile_nav} ${styles.w_hidden_main}`}>
+                    <div className={`${styles.mobile_wrapper}`}>
+                        <div className={`${styles.mobile_menu} ${this.state.isMobileNavOpen ? styles.open : ""}`}>
+                            <div className={`${styles.mobile_close_icon_wrapper}`}>
+                                <div className={`${styles.mobile_close_icon}`} onClick={this.mobileOpenHandler}>
+                                    <img
+                                        src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5bd9709849a14204678eed89_MobileCloseIcon_50x50.png"
+                                        width="25" alt="" className="image-14"/>
+                                </div>
+                            </div>
+                            <div className={`${styles.mobile_links_wrapper}`}>
+                                {links.map(element =>
+                                    <Link to=''
+                                          url={element.href}
+                                          className={`${styles.mobile_nav_links} ${styles.w_inline_block}`}
+                                          activeClassName={styles.w__current}>
+                                        <div className={`${styles.mobile_nav_link}`}>{element.text}</div>
+                                    </Link>)
+                                }
+                            </div>
+                        </div>
+                        <div className={`${styles.mobile_nav_wrapper}`}
+                             style={{transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}}>
+                            <div className={`${styles.mobile_nav_main}`}>
+                                <div className={`${styles.mobile_logo_wrapper}`}>
+                                    <div className={`${styles.logo} ${styles.mobile}`}>
+                                        <a href="/" className="link w--current">rightcolours.</a>
+                                    </div>
+                                </div>
+                                <div className="mobilemenuiconwrapper" onClick={this.mobileOpenHandler}>
+                                    <img
+                                        src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5beecdf2112a2c69536afe9f_MobileNavIcon_50x50_black_3pt.png"
+                                        width="25" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </React.Fragment>
         )
     }
 }

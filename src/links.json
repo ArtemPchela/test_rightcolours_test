@@ -1,0 +1,22 @@
+[
+  {
+    "href": "/",
+    "text": "agency."
+  },
+  {
+    "href": "/people",
+    "text": "people."
+  },
+  {
+   "href": "/projects",
+    "text": "projects."
+  },
+  {
+    "href": "/thoughts",
+    "text": "thoughts."
+  },
+  {
+    "href": "#footer",
+    "text": "contact."
+  }
+]
