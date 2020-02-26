@@ -3,7 +3,7 @@ import style from './style.module.scss';
 
 class Baloon extends Component {
     render() {
-        const {top, right, backgroundColor, mouse = {x: 0, y: 0}, transformHandler} = this.props;
+        const {top, right, left, size, backgroundColor, mouse = {x: 0, y: 0}, transformHandler} = this.props;
         const transformValue = transformHandler ? transformHandler(mouse.x, mouse.y) : {
             translate: {
                 transX: 0,
@@ -14,7 +14,7 @@ class Baloon extends Component {
         return (
             <div className={`${style.agency_hero_circle}`}
                  style={{
-                     top: top, right: right, willChange: 'transform',
+                     top: top, right: right, left: left, willChange: 'transform', width: size, height: size,
                      transformStyle: 'preserve-3d',
                      backgroundColor: `rgba(${backgroundColor.r + transformValue.changeColor.red}, 
                                        ${backgroundColor.g + transformValue.changeColor.green}, 

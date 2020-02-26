@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import styles from './style.module.scss';
 import links from '../../links.json';
+import burgerClose from './burgerImg/burgerClose.png';
+import burger from './burgerImg/burger.png';
 
 class Header extends Component {
     constructor(props) {
@@ -19,7 +21,6 @@ class Header extends Component {
     }
 
     checkScroll = () => {
-        console.log(window.pageYOffset, this.state.position);
         if (this.state.position <= window.pageYOffset) {
             this.setState({
                 headerCallapse: true,
@@ -51,12 +52,12 @@ class Header extends Component {
                             <a href="/" className={`${styles.header_logo} ${styles.logo_brand} ${styles.w__current}`}>
                                 <div className={`${styles.logo}`}>rightcolours.</div>
                             </a>
-                            <nav role="navigation" key={links}
+                            <nav role="navigation"
                                  className={`${styles.nav_menu_wrapper} ${styles.w_hidden_medium} ${styles.w_hidden_small} ${styles.w_hidden_tiny} ${styles.w_nav_menu}`}>
                                 {links.map(element =>
-                                    <Link to=''
+                                    <Link to='' key={element.href}
                                           url={element.href}
-                                          className={`${styles.desktop_navlink} ${styles.w_nav_link}`}
+                                          className={`${styles.desktop_nav_link} ${styles.w_nav_link}`}
                                           activeClassName={styles.w__current}
                                           style={{maxWidth: '1150px'}}>
                                         {element.text}
@@ -64,7 +65,6 @@ class Header extends Component {
                                 }
                             </nav>
                         </div>
-                        {/*<div className="w-nav-overlay" data-wf-ignore=""/>*/}
                     </div>
                 </div>
 
@@ -76,13 +76,13 @@ class Header extends Component {
                             <div className={`${styles.mobile_close_icon_wrapper}`}>
                                 <div className={`${styles.mobile_close_icon}`} onClick={this.mobileOpenHandler}>
                                     <img
-                                        src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5bd9709849a14204678eed89_MobileCloseIcon_50x50.png"
-                                        width="25" alt="" className="image-14"/>
+                                        src={burgerClose}
+                                        width="25"  alt=""/>
                                 </div>
                             </div>
                             <div className={`${styles.mobile_links_wrapper}`}>
                                 {links.map(element =>
-                                    <Link to=''
+                                    <Link to='' key={element.href}
                                           url={element.href}
                                           className={`${styles.mobile_nav_links} ${styles.w_inline_block}`}
                                           activeClassName={styles.w__current}>
@@ -99,9 +99,9 @@ class Header extends Component {
                                         <a href="/" className="link w--current">rightcolours.</a>
                                     </div>
                                 </div>
-                                <div className="mobilemenuiconwrapper" onClick={this.mobileOpenHandler}>
+                                <div className={`${styles.mobile_menu_icon_open}`} onClick={this.mobileOpenHandler}>
                                     <img
-                                        src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5beecdf2112a2c69536afe9f_MobileNavIcon_50x50_black_3pt.png"
+                                        src={burger}
                                         width="25" alt=""/>
                                 </div>
                             </div>

@@ -25,14 +25,16 @@ class Capabilities extends Component {
                             of all impressions by means of sight, any visual asset is a strategic decision to be made
                             with purpose.</p>
                         <div className="capabilities-row cr1">
-                            <div className="capabilties-box"><h4 className="capability-titles">Video</h4>
+                            <div className="capabilties-box">
+                                <h4 className="capability-titles">Video</h4>
                                 <div className="v2-divider-50-10-10"/>
                                 <div className="capabilities-text">Live Action</div>
                                 <div className="capabilities-text">Motion Graphics</div>
                                 <div className="capabilities-text">Explainers</div>
                                 <div className="capabilities-text">Animated Infographics</div>
                             </div>
-                            <div className="capabilties-box"><h4 className="capability-titles">Design</h4>
+                            <div className="capabilties-box">
+                                <h4 className="capability-titles">Design</h4>
                                 <div className="v2-divider-50-10-10"/>
                                 <div className="capabilities-text">Graphic Design</div>
                                 <div className="capabilities-text">Infographics</div>
@@ -41,7 +43,8 @@ class Capabilities extends Component {
                                 <div className="capabilities-text">Web + Mobile</div>
                                 <div className="capabilities-text">Presentations</div>
                             </div>
-                            <div className="capabilties-box"><h4 className="capability-titles">Branding</h4>
+                            <div className="capabilties-box">
+                                <h4 className="capability-titles">Branding</h4>
                                 <div className="v2-divider-50-10-10"/>
                                 <div className="capabilities-text">Corporate Identity</div>
                                 <div className="capabilities-text">Logo Design</div>
@@ -50,20 +53,23 @@ class Capabilities extends Component {
                             </div>
                         </div>
                         <div className="capabilities-row cr2">
-                            <div className="capabilties-box"><h4 className="capability-titles">Content</h4>
+                            <div className="capabilties-box">
+                                <h4 className="capability-titles">Content</h4>
                                 <div className="v2-divider-50-10-10"/>
                                 <div className="capabilities-text">Copywriting</div>
                                 <div className="capabilities-text">Content Strategy</div>
                                 <div className="capabilities-text">Content Architecture</div>
                                 <div className="capabilities-text">Social Media Ads</div>
                             </div>
-                            <div className="capabilties-box"><h4 className="capability-titles">Data</h4>
+                            <div className="capabilties-box">
+                                <h4 className="capability-titles">Data</h4>
                                 <div className="v2-divider-50-10-10"/>
                                 <div className="capabilities-text">Research</div>
                                 <div className="capabilities-text">Data Visualization</div>
                                 <div className="capabilities-text">Data Synopsis</div>
                             </div>
-                            <div className="capabilties-box"><h4 className="capability-titles">Development</h4>
+                            <div className="capabilties-box">
+                                <h4 className="capability-titles">Development</h4>
                                 <div className="v2-divider-50-10-10"/>
                                 <div className="capabilities-text">Responsive Websites</div>
                                 <div className="capabilities-text">Content management systems</div>

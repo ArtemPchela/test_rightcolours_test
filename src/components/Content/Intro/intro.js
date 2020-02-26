@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Baloon from "./Baloon/baloon";
+import Baloon from "../Baloon/baloon";
 
 const helloStrings = [
     "hello,",

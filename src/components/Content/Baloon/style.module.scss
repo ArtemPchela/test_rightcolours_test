@@ -1,6 +1,4 @@
 .agency_hero_circle {
-  //width: 300px;
-  //height: 290px;
   position: absolute;
   z-index: -100;
   width: 100%;
@@ -10,10 +8,6 @@
 
 .agency_hero_circle {
   position: absolute;
-  left: auto;
-  top: 18%;
-  right: 26%;
-  bottom: auto;
   z-index: -100;
   width: 380px;
   height: 380px;
@@ -23,12 +17,10 @@
   transform: scale3d(1, 1, 1);
 }
 
-@keyframes scale3d {
-  from {
-    transform: translateX(0%);
-  }
 
-  to {
-    transform: translateX(100%);
+@media screen and (max-width: 767px) {
+  .agency_hero_circle {
+    width: 300px;
+    height: 290px;
   }
 }

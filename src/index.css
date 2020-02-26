@@ -2211,32 +2211,7 @@ blockquote {
     perspective: 1000px;
 }
 
-.footer {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: auto;
-    min-height: auto;
-    padding-top: 60px;
-    padding-bottom: 25px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
-    background-image: linear-gradient(180deg, #000, #000);
-    font-family: Montserrat, sans-serif;
-}
+
 
 .background-box {
     position: absolute;
@@ -2418,28 +2393,7 @@ blockquote {
     perspective: 1000px;
 }
 
-.content-wrapper {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 95%;
-    max-width: 1150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
+
 
 .content-wrapper.logosection_mobile {
     -webkit-box-align: center;
@@ -2995,19 +2949,6 @@ blockquote {
     padding: 10px;
 }
 
-.medium-statement {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    -webkit-align-self: flex-start;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    color: #fff;
-    font-size: 30px;
-    line-height: 35px;
-    font-weight: 800;
-    text-transform: none;
-}
-
 .socialicons-wrapper {
     position: static;
     overflow: hidden;
@@ -3021,27 +2962,6 @@ blockquote {
 
 .singleprojectsection {
     min-height: auto;
-}
-
-.rclogosymbol {
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-    padding-bottom: 0px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-self: flex-start;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    background-image: url("https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5def6a2b3e4ca4207ad68a2b_RC18_LogoSign_White.svg");
-    background-position: 50% 50%;
-    background-size: 50px;
-    background-repeat: no-repeat;
 }
 
 .utility-page-wrap {
@@ -3902,27 +3822,7 @@ blockquote {
     align-items: flex-start;
 }
 
-.removelinkhighlight {
-    color: #fff;
-    text-decoration: none;
-}
 
-.removelinkhighlight:hover {
-    color: hsla(0, 0%, 100%, 0.7);
-    text-decoration: underline;
-}
-
-.removelinkhighlight:active {
-    color: #848484;
-}
-
-.removelinkhighlight:focus {
-    color: #848484;
-}
-
-.removelinkhighlight:visited {
-    color: #fff;
-}
 
 .bold-text-3 {
     max-width: 100%;
@@ -5962,8 +5862,8 @@ blockquote {
 }
 
 .v2-smalltext.adjustment8 {
-    margin-top: 20px;
-}
+     margin-top: 20px;
+ }
 
 .v2-smalltext.adjustment13 {
     margin-top: 1px;
@@ -6005,9 +5905,6 @@ blockquote {
     width: 100px;
     height: 1px;
     margin-bottom: 100px;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    -ms-grid-row-align: auto;
     align-self: auto;
     background-color: #e6e6e6;
 }
@@ -6260,7 +6157,7 @@ blockquote {
 }
 
 .footer-text-bold {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     color: #fff;
     font-weight: 500;
 }
@@ -6357,16 +6254,6 @@ blockquote {
     line-height: 200px;
     font-weight: 800;
 }
-
-.footer-phone-link {
-    color: #848484;
-    text-decoration: none;
-}
-
-.footer-phone-link:hover {
-    text-decoration: underline;
-}
-
 
 .v2-projects-impactful {
     margin-top: 20px;
@@ -6609,9 +6496,6 @@ blockquote {
         width: 80%;
         max-width: 95%;
         min-width: 0px;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -6706,27 +6590,7 @@ blockquote {
         padding-bottom: 0px;
     }
 
-    .content-wrapper.footer-section {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 0px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
+
 
     .content-wrapper.portfolio-section {
         display: -webkit-box;
@@ -6768,14 +6632,7 @@ blockquote {
         margin-bottom: 20px;
     }
 
-    .content-wrapper.blpbody {
-        padding-bottom: 60px;
-    }
 
-    .content-wrapper.bpbody {
-        margin-top: 75px;
-        margin-bottom: 25px;
-    }
 
     .image-3 {
         display: block;
@@ -6883,17 +6740,6 @@ blockquote {
         -webkit-flex: 0 auto;
         -ms-flex: 0 auto;
         flex: 0 auto;
-    }
-
-    .medium-statement {
-        display: block;
-        width: auto;
-        max-width: 90%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 19px;
-        line-height: 24px;
-        text-align: left;
     }
 
     .socialicons-wrapper {
@@ -8108,26 +7954,6 @@ blockquote {
         margin-bottom: 20px;
     }
 
-    .content-wrapper.footer-section {
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 95%;
-        margin-top: 0px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
-
     .content-wrapper.portfolio-section {
         display: -webkit-box;
         display: -webkit-flex;
@@ -8210,20 +8036,6 @@ blockquote {
 
     .logoboxes {
         max-width: 50%;
-    }
-
-    .medium-statement {
-        position: static;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 17px;
-        line-height: 24px;
-        font-weight: 800;
-        text-align: left;
     }
 
     .socialicons-wrapper {
@@ -8819,10 +8631,6 @@ blockquote {
         margin-top: 20px;
     }
 
-    .agency-hero-circle {
-        width: 300px;
-        height: 290px;
-    }
 
     .agency-hero-circlebox {
         display: none;
@@ -8858,14 +8666,7 @@ blockquote {
         margin-bottom: 10px;
     }
 
-    .v2-divider-section {
-        margin-bottom: 50px;
-        background-color: #e6e6e6;
-    }
 
-    .v2-divider-section.adjustment21 {
-        background-color: transparent;
-    }
 
     .v2-header-agency-h3._85pct {
         max-width: 95%;
@@ -9090,13 +8891,6 @@ blockquote {
         padding-bottom: 0px;
     }
 
-    .content-wrapper.footer-section {
-        width: 95%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 15px;
-    }
-
     .content-wrapper.portfolio-section {
         width: 95%;
     }
@@ -9188,17 +8982,6 @@ blockquote {
 
     .logoboxes {
         padding: 20px;
-    }
-
-    .medium-statement {
-        display: block;
-        max-width: 90%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-        font-size: 17px;
     }
 
     .socialicons-wrapper {
@@ -9691,14 +9474,6 @@ blockquote {
 
     .v2-divider-250-10-10.adjustment11 {
         margin-bottom: 20px;
-    }
-
-    .v2-divider-section {
-        background-color: #e6e6e6;
-    }
-
-    .v2-divider-section.adjustment21 {
-        background-color: transparent;
     }
 
     .v2-agency-section3 {
