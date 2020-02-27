@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import award1 from './img/Photography_Award1_1920x1003.jpg';
+import award2 from './img/Photography_Award2_2300x732.jpg';
 
 class News extends Component {
     render() {
@@ -14,20 +16,20 @@ class News extends Component {
                     <p
                         className="v2-paragraph-standard">We are proud to announce that our UNICEF project “
                         <a href="https://github.com"
-                            className="sp-textlink">
+                           className="sp-textlink">
                             The Adolescent Brain
                         </a>“
                         has been recognized with the &nbsp;
                         <a href="https://github.com"
                            className="sp-textlink">
-                           dpa Infographic award
+                            dpa Infographic award
                         </a>
                         &nbsp;2019 (2nd Place Winner) in the category
                         “Infographics for companies, organizations, and institutions“.
                     </p>
                     <img
-                        src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5dde53a4af313a39cf8e4268_V2_Photography_Award1_1920x1003.jpg"
-                        width="860" alt="dpa Infografik award"
+                        src={award1}
+                        style={{width: "860px"}} alt="dpa Infografik award"
                         sizes="(max-width: 991px) 95vw, 860px" className="v2-agency-photo1 adjustment22"/>
                     <p className="v2-paragraph-standard">
                         The dpa-infografik, a subsidiary of the Deutsche Presse-Agentur
@@ -52,8 +54,8 @@ class News extends Component {
                         dpa newsroom in Berlin on the 21st of November 2019.
                     </p>
                     <img
-                        src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5dde576163de4e61116455e8_V2_Photography_Award2_2300x732.jpg"
-                        width="1150" alt="dpa Infografik award"
+                        src={award2}
+                        style={{width: "1150px"}} alt="dpa Infografik award"
                         sizes="95vw" className="v2-agency-photo-awardgroup"/>
                     <div className="awardphotocreditstext">Photo Credits: Monika Skolimowska/dpa (Deutsche Presse
                         Agentur)

@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 class Work extends Component {
     render() {
         return (
-            <div data-w-id="0d7e326e-b8b6-37d3-1bea-fc0ad7904b76" className="v2-agency-section2">
+            <div className="v2-agency-section2">
                 <div className="v2-wrapper">
                     <img
                         src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5da41ac08d4d2639508034d0_V2_Element_DiagonalLines2.svg"
@@ -49,7 +49,7 @@ class Work extends Component {
                         />
                         <img
                             src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5dab335dd26b0a744dd087cb_Agency_Graphics_05_Alternative3.jpg"
-                            width="800" data-w-id="f9650d5e-ffad-1913-e364-ffc60798dc75" alt=""
+                            width="800" alt=""
                             className="v2-agency-graphic gr5"
                             style={{willChange: 'transform', transform: 'translate3d(0px, -137.3px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}}
                         />

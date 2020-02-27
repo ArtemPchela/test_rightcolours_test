@@ -41,7 +41,6 @@ class Header extends Component {
     };
 
 
-
     render() {
         return (
             <React.Fragment>
@@ -58,7 +57,7 @@ class Header extends Component {
                                     <Link to='' key={element.href}
                                           url={element.href}
                                           className={`${styles.desktop_nav_link} ${styles.w_nav_link}`}
-                                          activeClassName={styles.w__current}
+                                          activeclassname={styles.w__current}
                                           style={{maxWidth: '1150px'}}>
                                         {element.text}
                                     </Link>)
@@ -69,7 +68,6 @@ class Header extends Component {
                 </div>
 
 
-
                 <div className={`${styles.mobile_nav} ${styles.w_hidden_main}`}>
                     <div className={`${styles.mobile_wrapper}`}>
                         <div className={`${styles.mobile_menu} ${this.state.isMobileNavOpen ? styles.open : ""}`}>
@@ -77,7 +75,7 @@ class Header extends Component {
                                 <div className={`${styles.mobile_close_icon}`} onClick={this.mobileOpenHandler}>
                                     <img
                                         src={burgerClose}
-                                        width="25"  alt=""/>
+                                        width="25" alt=""/>
                                 </div>
                             </div>
                             <div className={`${styles.mobile_links_wrapper}`}>
@@ -85,18 +83,23 @@ class Header extends Component {
                                     <Link to='' key={element.href}
                                           url={element.href}
                                           className={`${styles.mobile_nav_links} ${styles.w_inline_block}`}
-                                          activeClassName={styles.w__current}>
+                                          activeclassname={styles.w__current}>
                                         <div className={`${styles.mobile_nav_link}`}>{element.text}</div>
                                     </Link>)
                                 }
                             </div>
                         </div>
                         <div className={`${styles.mobile_nav_wrapper}`}
-                             style={{transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}}>
+                             style={{
+                                 transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+                                 transformStyle: 'preserve-3d'
+                             }}>
                             <div className={`${styles.mobile_nav_main}`}>
                                 <div className={`${styles.mobile_logo_wrapper}`}>
                                     <div className={`${styles.logo} ${styles.mobile}`}>
-                                        <a href="/" className="link w--current">rightcolours.</a>
+                                        <Link to="/" className="link w--current">
+                                            rightcolours.
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className={`${styles.mobile_menu_icon_open}`} onClick={this.mobileOpenHandler}>

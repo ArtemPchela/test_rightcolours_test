@@ -30,7 +30,7 @@ class Footer extends Component {
                     <div className={`${styles.footer_text_bold}`}>Map &amp; Directions</div>
                     <div className={`${styles.footer_text}`}>
                         <a href="https://github.com"
-                           className="footer-map-link">
+                           className={`${styles.footer_map_link}`}>
                             Schumannstr.11<br/>60325 Frankfurt am
                             Main (Germany)
                         </a>

@@ -67,6 +67,15 @@
     }
 }
 
+.footer_map_link {
+  color: #848484;
+  text-decoration: none;
+}
+
+.footer_map_link:hover {
+  text-decoration: underline;
+}
+
 .footer_text {
   color: #848484;
   font-size: 13px;
@@ -238,8 +247,8 @@
 @media screen and (max-width: 479px) {
   .content_wrapper.footer_section {
     width: 95%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-bottom: 15px;
   }
 

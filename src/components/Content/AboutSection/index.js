@@ -1,12 +1,7 @@
 import React, {Component} from "react";
-import Baloon from "../Baloon/baloon";
-
-
+import Baloon from "../Baloon";
 
 function calcTransform(x, y) {
-    // const scroll = document.body.offsetHeight;
-    const windowOffSet = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(windowOffSet);
      return {
         translate: {
             transX: x,
@@ -51,7 +46,6 @@ class About extends Component {
                 }
 
             });
-            console.log(this.state.scroll);
         }
     };
 
@@ -84,6 +78,7 @@ class About extends Component {
                         src="https://uploads-ssl.webflow.com/5af9558c779b5a43b17ff034/5dad68c265b2d982371440d7_V2_ClientLogos_Mobile.svg"
                         alt="" className="v2-clientlogos-mobile"/>
                     <Baloon
+                        customClass="about_baloon"
                         left="4%"
                         top="18%"
                         size="320px"

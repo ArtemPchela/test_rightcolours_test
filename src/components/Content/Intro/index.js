@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Baloon from "../Baloon/baloon";
+import React, {Component} from "react";
+import Baloon from "../Baloon";
 
 const helloStrings = [
     "hello,",
@@ -17,7 +17,6 @@ const helloStrings = [
 ];
 
 function calcTransform(x, y) {
-    // const percent = x / window.innerWidth;
     return {
         translate: {
             transX: x / 25,
@@ -67,7 +66,7 @@ function calcTransform2(x, y) {
                 tz: 0
             }
         },
-        scale: Math.round(2000 * percent)/10000
+        scale: Math.round(2000 * percent) / 10000
     };
 }
 
@@ -76,7 +75,7 @@ class Intro extends Component {
         super(props);
         this.handleMouseMove = this.handleMouseMove.bind(this);
         this.state = {
-            mouse: { x: 0, y: 0 },
+            mouse: {x: 0, y: 0},
             elapsed: 0,
             substringLength: 0,
             start: new Date(),
@@ -86,7 +85,7 @@ class Intro extends Component {
 
     handleMouseMove(event) {
         this.setState({
-            mouse: { x: event.clientX, y: event.clientY }
+            mouse: {x: event.clientX, y: event.clientY}
         });
     }
 
@@ -134,14 +133,17 @@ class Intro extends Component {
                     <div className="typed-words">
                         {helloStrings[this.state.currentArrayNumber].substring(0, this.state.substringLength)}
                     </div>
-                    <div className="v2-divider-150-5-30" />
+                    <div className="v2-divider-150-5-30"/>
                     <h1 className="v2-header-agency-hero-h1">
-                        rightcolours is a Frankfurt based international creative agency for design, strategy &amp; visual
+                        rightcolours is a Frankfurt based international creative agency for design,
+                        strategy &amp; visual
                         communication.
                     </h1>
                     <p className="v2-paragraph-standard">
-                        Our mission is to help companies and institutions grow, adapt, raise awareness and achieve their goals
-                        through purposeful and strategic visual communication across all relevant channels, both online and offline.
+                        Our mission is to help companies and institutions grow, adapt, raise awareness and achieve their
+                        goals
+                        through purposeful and strategic visual communication across all relevant channels, both online
+                        and offline.
                     </p>
                     <a href="https://github.com" className="v2-button-1 w-button">
                         Learn more

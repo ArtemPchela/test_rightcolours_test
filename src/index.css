@@ -6463,6 +6463,10 @@ blockquote {
         padding-top: 65px;
     }
 
+    .about_baloon {
+        display: none;
+    }
+
     .footer {
         margin-top: 0px;
         margin-bottom: 0px;

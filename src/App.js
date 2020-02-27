@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Header from "./components/Header";
-import Intro from "./components/Content/Intro/intro";
-import About from "./components/Content/AboutSection/about"
-import News from "./components/Content/News/news";
-import Work from "./components/Content/Work/work";
-import Capabilities from "./components/Content/Capabilities/capabilities";
+import Intro from "./components/Content/Intro";
+import About from "./components/Content/AboutSection"
+import News from "./components/Content/News";
+import Work from "./components/Content/Work";
+import Capabilities from "./components/Content/Capabilities";
 import Footer from "./components/Footer";
 
 class App extends Component {
